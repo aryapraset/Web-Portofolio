@@ -67,6 +67,7 @@ main {
     flex: 1;
    
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -130,53 +131,237 @@ main .content .content-image img {
     min-width: 250px;
     width: 300px;
 }
-/* End Of Content */
 
+/* project */
+main .project {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+main .project h1 {
+    display: flex;
+    justify-content: center;
+    color: #DDE6ED;
+    font-size: 3.0rem;
+    margin-block: 1rem;
+}
+
+main .project .project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+main .project .project-satu h2 {
+    color: #DDE6ED;
+    font-size: 2.0rem;
+    margin-block: 1rem;
+}
+
+main .project .project-satu .content-project-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+main .project .project-satu .content-project-1 p{
+    align-items: stretch;
+    color: #DDE6ED;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .project .project-satu .content-project-1 img{
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+    align-items: stretch;
+}
+
+main .project .project-dua h2 {
+    color: #DDE6ED;
+    font-size: 2.0rem;
+    margin-block: 1rem;
+}
+
+main .project .project-dua .content-project-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+main .project .project-dua .content-project-2 p{
+    align-items: stretch;
+    color: #DDE6ED;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .project .project-dua .content-project-2 img{
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+    align-items: stretch;
+}
+
+main .project .project-tiga h2 {
+    color: #DDE6ED;
+    font-size: 2.0rem;
+    margin-block: 1rem;
+}
+
+main .project .project-tiga .content-project-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+main .project .project-tiga .content-project-3 p{
+    align-items: stretch;
+    color: #DDE6ED;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .project .project-tiga .content-project-3 img{
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+    align-items: stretch;
+}
+
+/* blog */
+main .blog {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+main .blog h1 {
+    display: flex;
+    justify-content: center;
+    color: #DDE6ED;
+    font-size: 3.0rem;
+    margin-block: 1rem;
+}
+
+main .blog .blog-list {
+    display: flex;
+    flex-direction: column;
+}
+
+main .blog .blog-list .blog-satu h2 {
+    color: #DDE6ED;
+    font-size: 2.0rem;
+    margin-block: 1rem;
+}
+
+main .blog .blog-list .blog-satu p{
+    align-items: stretch;
+    color: #DDE6ED;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .blog .blog-list .blog-dua h2 {
+    color: #DDE6ED;
+    font-size: 2.0rem;
+    margin-block: 1rem;
+}
+
+main .blog .blog-list .blog-dua p {
+    align-items: stretch;
+    color: #DDE6ED;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .blog .blog-list .blog-tiga h2 {
+    color: #DDE6ED;
+    font-size: 2.0rem;
+    margin-block: 1rem;
+}
+
+main .blog .blog-list .blog-tiga p {
+    align-items: stretch;
+    color: #DDE6ED;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+/* about */
 aside {
     position: fixed;
-    inset-block: 0;
     inset-inline-end: 0;
+    border: 4px solid #DDE6ED;
+    padding: 5px 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 10px;
+    background-color: #9DB2BF
 }
 
-aside .social-media {
-    height: 100%;
+aside .about h1 {
     display: flex;
-}
-
-aside .social-media ul {
-    padding: 1.5rem 1rem;
-    margin: auto;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    background-color: #526D82;
- 
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    color: #DDE6ED;
+    font-size: 1.0rem;
+    margin-block: 1rem;
 }
 
-aside .social-media li {
+aside .about .biodata ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    gap: 1rem;
+}
+
+aside .about .biodata li {
     list-style-type: none;
 }
 
-aside .social-media li a {
+aside .about .biodata li a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 0.7rem;
     color: #DDE6ED;
-    transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out
 }
 
-aside .social-media li a:hover {
-    color: #526D82;
+aside .about h2 {
+    display: flex;
+    justify-content: center;
+    color: #DDE6ED;
+    font-size: 0.8rem;
+    margin-block: 1rem;
 }
-/* End Of Aside */
+
+aside .about .skill-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+    gap: 2rem 1rem;
+}
+
+aside .about .skill-list li {
+    list-style-type: none;
+}
+
+aside .about .skill-list li a {
+    text-decoration: none;
+    font-size: 2.0rem;
+    color: #DDE6ED;
+    transition: all .1s ease-in-out
+}
+
+/* end of main */
 
 footer {
     background-color: #526D82;
     color: #DDE6ED;
     padding: 20px;
     text-align: center;
-  }
+}
 
